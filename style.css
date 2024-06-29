@@ -126,6 +126,17 @@ body {
     padding: 3.6rem;
 }
 
+.list {
+    list-style: none;
+
+}
+.list-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:hsla(203, 44%, 93%, 0.811);
+    margin-bottom: 0.5rem;
+}
+
 
 footer{
     position: absolute;
@@ -135,4 +146,33 @@ footer{
 }
 footer a {
     text-decoration: none;
+}
+
+
+@media (max-width:675px){
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:525px){
+    html {
+        font-size: 10px;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .container {
+        margin: 2rem;
+        margin-top: -10rem;
+    }
+    
+    footer{
+        position: absolute;
+        bottom: -35%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
 }
